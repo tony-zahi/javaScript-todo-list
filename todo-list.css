@@ -1,0 +1,109 @@
+
+body {
+    background-image: url(./images/Desktop\ -\ 1.png);
+    color: #fff;
+    display: grid;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.main-div {
+    background-color: #ffffff1e;
+    padding: 1rem 5rem 3rem 5rem;
+    margin: 2rem;
+}
+
+.title {
+   text-align: center;
+}
+
+.todo-grid,
+.inputs {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    row-gap: 10px;
+    column-gap: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.input,
+.date-input {
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+ 
+}
+
+.todo-grid {
+    align-items: center;
+}
+
+.input,
+.delete-todo-btn {
+    padding: 10px;
+}
+
+.input::placeholder {
+    color: #fff;
+}
+
+.todo-add-btn {
+    background-color: green;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.delete-todo-btn {
+    background-color: red;
+    border: none;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+
+
+
+    .main-div {
+        background-color: #ffffff1e;
+        padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+        margin: 2rem;
+    }
+
+   
+    .inputs {
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        row-gap: 10px;
+        column-gap: 15px;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .todo-grid{
+        margin-top: 2rem;
+        grid-template-columns: 40% 40% 20%;
+        justify-content: start;
+        width: 80%
+    }
+
+    .delete-todo-btn {
+        background-color: red;
+        width: 170%;
+        border: none;
+        font-size: 1.1rem;
+        color: #fff;
+    }
+
+    .todo-add-btn {
+        background-color: green;
+        color: #fff;
+        font-size: 1.1rem;
+        padding: 10px;
+        border: none;
+        width: 210%;
+    }
+}
